@@ -16,8 +16,13 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from rest_framework import routers
+from app.views import TareaViewSet
+
+router = routers.DefaultRouter()
+router.register(r'tareas', TareaViewSet)
 
 urlpatterns = [
     #path('admin/', admin.site.urls),
-    path('tareas/', include('app.urls'))
+    path('', include(router.urls))
 ]

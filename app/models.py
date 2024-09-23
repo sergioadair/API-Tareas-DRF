@@ -6,6 +6,3 @@ class Tarea(models.Model):
     descripcion = models.TextField(max_length=500)
     estado = models.BooleanField(default=False)
     fecha_creacion = models.DateTimeField(auto_now_add=True)
-
-    def __repr__(self):
-        return self.titulo
