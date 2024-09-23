@@ -3,10 +3,7 @@
 
 Para instalar los paquetes necesarios: pip install -r requirements.txt
 
-Para crear la base de datos:
-1. python manage.py migrate
-2. python manage.py makemigrations
-3. python manage.py migrate
+Para crear la base de datos: python manage.py migrate
 
 Para correr el servidor: python manage.py runserver
 
