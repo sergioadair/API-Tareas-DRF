@@ -3,7 +3,7 @@ from rest_framework import routers
 from .views import TareaViewSet
 
 router = routers.DefaultRouter()
-router.register(r'tareas', TareaViewSet)
+router.register(r'', TareaViewSet)
 
 urlpatterns=[
     path('', include(router.urls))
