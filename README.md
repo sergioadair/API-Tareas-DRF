@@ -3,13 +3,10 @@
 
 Para instalar los paquetes necesarios: pip install -r requirements.txt
 
-Para crear la base de datos:
-1. python manage.py migrate
-2. python manage.py makemigrations
-3. python manage.py migrate
+Para crear la base de datos: python manage.py migrate
 
 Para correr el servidor: python manage.py runserver
 
-La API estará corriendo en http://localhost:8000
+La API estará corriendo en http://localhost:8000/tareas
 
-No se necesita autenticación, no hay ningún administrador creado.
+#### Se pueden realizar las operaciones CRUD desde la propia aplicación.
